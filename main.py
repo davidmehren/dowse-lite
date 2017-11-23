@@ -1,3 +1,4 @@
+#!/bin/env python3
 import re
 import socket
 from functools import lru_cache
