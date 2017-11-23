@@ -73,7 +73,7 @@ def main_app(args):
 try:
     parser = argparse.ArgumentParser()
     parser.add_argument("interface", help="Interface to detect traffic on", type=str)
-    parser.add_argument("--mode", help="Use RDNS of all TCP traffic (tcp, default) or analyse DNS querys (dns)",
+    parser.add_argument("-m", "--mode", help="Use RDNS of all TCP traffic (tcp, default) or analyse DNS querys (dns)",
                         default="tcp", choices=["tcp", "dns"])
     parser.add_argument("--myip", help="Set IP of this device if the autodetection leads to wrong results", type=str)
     args = parser.parse_args()
